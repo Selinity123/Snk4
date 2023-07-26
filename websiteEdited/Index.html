@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <link rel="icon" href="firework.png">
+        <title>Welcome!</title>
+        <style>
+            body{margin:35px;border:solid rgb(38, 45, 63) 9px;
+                 background-image:url("border\ login.jpg");
+                 background-repeat:no-repeat;
+                 background-size:cover;}
+            #margin{margin-top:35px;margin-bottom:35px;margin-left:100px;margin-right:100px;}
+            header{text-align:center;color:rgb(134, 141, 107);
+                   font-family:Brush Script MT;font-size:30px;
+                   background-color:rgb(210, 212, 200);padding:10px;
+                   }
+            #mainB{background-color:rgb(224, 226, 219);background-size:fill;}
+            h2{font-family:'Courier New', Courier, monospace;color:rgb(134, 141, 107);}
+            ul{margin-left:35px;}
+            #ok{font-weight:bolder;color:rgb(205, 137, 135);}
+            mark{background-color:rgba(255, 236, 215, 0);color:rgb(99, 55, 44);}
+            o{color:rgb(162, 108, 93);}
+            #lunch{position:absolute;bottom:150px;left:850px;}
+            #padd{padding:35px;}
+            p{margin-left:200px;margin-top:100px;font-size:20px;line-height: 40px;}
+
+            h2 span{animation: animate 0.5s infinite;display: table-cell;
+                    font-family:'Trebuchet MS', 
+                    'Lucida Sans Unicode', 
+                    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+
+            div.button{cursor:pointer;}
+            #dw{margin-left:30px;}
+            button{border-radius: 12px; padding: 32px 16px; background-color:green;width:1010px;color:white;font-size:35px;}
+
+            #demo{color:rgba(0, 0, 255, 0);}
+                @keyframes animate 
+    {
+      0% {transform: translateY(0px);}
+      50% {transform: translateY(-10px);}
+    100% {transform: translateY(0px);}
+    }
+ h2 span:nth-child(1) {animation-delay: 1s;}
+ h2 span:nth-child(2) {animation-delay: 0.5s;}
+ h2 span:nth-child(3) { animation-delay: 0.6s;}
+ h2 span:nth-child(4) { animation-delay: 0.7s;}
+        </style>
+        <script>
+            var myTimer;
+            function redir() {
+            myTimer = setInterval(myClock, 1000);
+            var c = 5;
+            function myClock() {
+             document.getElementById("demo").innerHTML = --c;
+                if (c == 0) {
+                    clearInterval(myTimer);
+              *       window.location.href="Home.html"
+         }
+       }
+     }
+             </script>
+    </head>
+    <body style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(38, 35, 34);"
+    id="ok"
+    onload="redir()">
+        <div id="mainB">
+        <header><h1><u><mark>Please read carefully before proceeding!</mark></u></h1></header>
+            <div id="demo"></div>
+            <p>
+                Welcome to our official website!
+                <br>
+                Here you will be able to surf through our clothes, however, <span style="color:red;">you <u>cannot</u> make purchases here directly.</span>
+                <br><br>
+                If you would like to make some purchases, please contact either the following number 
+                or the following email:
+                <br>
+
+                <span id="dw" style="color:rgb(60, 123, 223);">
+                <img src="dotpoint.png" style="width:20px;height:20px;">&nbsp&nbsp +61 402 576 790 
+                <br>
+                </span>
+                <span id="dw" style="color:rgb(60, 123, 223);">
+                <img src="dotpoint.png" style="width:20px;height:20px;">&nbsp&nbsp shai1976@yahoo.com
+                <br><br>
+                </span>
+
+                In the call or email, please specify the exact sizes, clothes and quantities you would like to purchase.
+                <br>
+                <span id="dw">Please explain your purchases under the following structure (hover over each colour-coded element):</span>
+                <br>
+                <span id="dw"><span id="dw">Example Purchase:</span></span>
+                <br>
+                <span id="dw"><span id="dw"><span id="dw"><span style="color:green;"><abbr title="Quantity of the garment">2</abbr></span>
+                <span style="color:rgb(255, 115, 0);"><abbr title="Name of the garment">Yellow Panjabis</abbr></span>
+                <span style="color:rgb(255, 0, 225);"><abbr title="Size of the garment">Sized M (medium)</abbr></span>
+                </span></span></span>
+                <br>
+                <span id="dw"><span id="dw"><span id="dw"><span style="color:green;"><abbr title="Quantity of the garment">1</abbr></span>
+                <span style="color:rgb(255, 115, 0);"><abbr title="Name of the garment">Yellow Panjabi</abbr></span>
+                <span style="color:rgb(255, 0, 225);"><abbr title="Size of the garment">Sized XS (extra small)</abbr></span>
+                </span></span></span>
+                <br>
+                <br>
+                Please keep in mind that if sufficient information is not provided, the purchase will not be considered.
+                <br>
+                Thank you for considering to support us :)
+                <br><br>
+                <a href="Home.html"><button type="button"><div class="button">Browse Our Clothes...</div></button></a>
+            </p>
+
+            <div id="padd"></div>
+            <h2 style="position: absolute;top: 30%;
+            left: 15%;font-size:40px;">
+        <div style="position:absolute; top:-50px; left:-150px;
+        font-family:'Trebuchet MS', 
+                    'Lucida Sans Unicode', 
+                    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size:20px;">REDIRECTING</div>
+        <span style="position:absolute; top:-50px; left:-20px;font-size:20px;">.</span>
+        <span style="position:absolute; top:-50px; left:-10px;font-size:20px;">.</span>
+        <span style="position:absolute; top:-50px; left:0px;font-size:20px;">.</span>
+            </h2>
+     
+       
+     
+
+    </body>
+</html>
